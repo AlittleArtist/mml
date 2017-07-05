@@ -1,0 +1,45 @@
+._textPrimaryColor {
+    color: $brown-gold;
+}
+
+
+._marginBot90 {
+    margin-bottom: 90px;
+}
+
+._marginBot50 {
+    margin-bottom: 50px;
+}
+._marginRight25{
+    margin-right: 25px;
+}
+._nomargin {
+    margin: 0 !important;
+}
+
+._bgDarkGrey {
+    background-color: $dark-grey;
+}
+
+._bggrey {
+    background-color: $grey;
+}
+
+._bgsuperlightgrey {
+    background-color: $super-lighter-grey;
+}
+
+._bordertoplightergrey {
+    border-top: thin solid $lighter-grey;
+}
+
+._posRelative {
+    position: relative;
+}
+
+._required {
+    &:after {
+        content: " *";
+        color: $danger;
+    }
+}

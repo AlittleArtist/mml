@@ -1,0 +1,10 @@
+@import 'mixins';
+.global-animate {
+    @include transition(all 0.5s ease);
+}
+.global-radius{
+    @include border-radius(5px);
+}
+.global-boxShadow{
+    @include box-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+}

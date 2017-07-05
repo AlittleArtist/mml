@@ -1,0 +1,261 @@
+@import 'mixins';
+@import 'variables';
+@import 'helpers';
+@import 'extend';
+h1,
+.h1 {
+    font-size: 36px;
+    font-size: $font-size36;
+}
+
+h2,
+.h2 {
+    font-size: 30px;
+    font-size: $font-size30;
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+    font-size: $font-size24;
+}
+
+h4,
+.h4 {
+    font-size: 18px;
+    font-size: $font-size18;
+}
+
+h5,
+.h5 {
+    font-size: 14px;
+    font-size: $font-size14;
+}
+
+h6,
+.h6 {
+    font-size: 12px;
+    font-size: $font-size12;
+}
+
+a {
+    color: $brown-gold;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: $brown-gold;
+    text-decoration: underline;
+}
+.navbar-default{
+    background: url(../../images/bg-header.jpg) center top no-repeat;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: $lighter-grey;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.btn {
+    @extend .global-animate;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-default.focus,
+.btn-default:focus,
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open>.dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover {
+    color: $brown-gold;
+    background: transparent;
+    border-color: $brown-gold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    >.borderBox {
+        border: thin solid $brown-gold;
+        background-color: transparent;
+        color: $lighter-grey;
+    }
+}
+
+label {
+    font-weight: normal;
+}
+
+.navbar-default {
+    background-color: $dark-grey;
+    border: none;
+    border-radius: 0;
+}
+
+.nav>li {
+    &>a {
+        padding: 15px 20px 15px 0;
+    }
+    .icon {
+        font-size: 4px;
+        font-size: $font-size4;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}
+
+.navbar-default {
+    .navbar-nav>li>a {
+        color: $lighter-grey
+    }
+    .navbar-nav>li>a:hover {
+        color: $brown-gold;
+    }
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    padding: 0;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    >.title {
+        font-size: 18px;
+        font-size: $font-size18;
+        margin-right: 30px;
+    }
+    >.title.active a,
+    >.title.active a:hover,
+    >.title.active a:focus {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 5px solid $brown-gold;
+    }
+    >.title a {
+        margin-right: 0;
+        color: $grey;
+        padding: 15px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 5px solid $lighter-grey;
+    }
+    >.title a:hover,
+    .title a:focus {
+        background-color: transparent;
+        border-color: $brown-gold;
+    }
+}
+
+.thumbnail {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-default {
+    color: $brown-gold;
+    background-color: transparent;
+    border-color: $brown-gold;
+    &:hover {
+        @extend .btn-default;
+    }
+}
+
+.btn {
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    font-size: $font-size18;
+    border-radius: 5px;
+}
+
+.owl-carousel {
+    .owl-dots {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        @include transform(-50%);
+    }
+    .owl-dots .owl-dot span {
+        font-family: FontAwesome;
+        color: $brown-gold;
+        background: none!important;
+    }
+    .owl-dots .owl-dot span:before {
+        content: "\f10c";
+    }
+    .owl-dots .owl-dot.active span:before {
+        content: "\f111";
+    }
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle {
+    margin-right: 0px;
+    padding-right: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $brown-gold;
+}
+
+.navbar-toggle .icon-bar {
+    width: 26px;
+    height: 2px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 5px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+}
+
+.responsive-tabs-container .accordion-link {
+    display: none;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    color: $grey;
+    border-left: 5px solid $brown-gold;
+    position: relative;
+}
+
+.responsive-tabs-container .accordion-link:after {
+    content: "\f107";
+    font-family:FontAwesome;
+    position: absolute;
+    right: 0;
+}
