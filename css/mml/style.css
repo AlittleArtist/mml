@@ -445,6 +445,11 @@ navbar-top*/
     font-size: 12px;
     font-size: 0.75rem; }
 
+.product-list {
+  margin-bottom: 30px; }
+  .product-list .thumbnail {
+    margin-bottom: 30px; }
+
 .sitemap-list {
   list-style: none;
   margin-bottom: 40px;
