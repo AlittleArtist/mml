@@ -51,7 +51,7 @@ navbar-top*/
 }
 
 .tab-content {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .subpage-title {
@@ -142,6 +142,10 @@ navbar-top*/
     margin-bottom: 30px;
     .thumbnail{
         margin-bottom: 30px;
+        text-align: left;
+    }
+    .title{
+        color: $brown-gold;
     }
 }
 

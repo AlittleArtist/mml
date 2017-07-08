@@ -387,7 +387,7 @@ navbar-top*/
   margin-bottom: 0 !important; }
 
 .tab-content {
-  padding: 20px 0; }
+  padding: 40px 0; }
 
 .subpage-title {
   color: #b57923; }
@@ -448,7 +448,10 @@ navbar-top*/
 .product-list {
   margin-bottom: 30px; }
   .product-list .thumbnail {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: left; }
+  .product-list .title {
+    color: #b57923; }
 
 .sitemap-list {
   list-style: none;
