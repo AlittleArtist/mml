@@ -350,7 +350,10 @@ label {
       margin-bottom: 20px; } }
 @media (max-width: 768px) {
   .copy-right > .side {
-    float: none !important; } }
+    float: none !important; }
+
+  .subpage-content {
+    padding: 40px 0 !important; } }
 html {
   font-size: 16px; }
 
@@ -402,7 +405,9 @@ navbar-top*/
   padding-top: 14px; }
 
 .bg-loginForm {
-  background: url(../../images/bg-loginForm.png) center top no-repeat; }
+  background-image: url(../../images/bg-loginForm.png);
+  background-position: center top;
+  background-repeat: no-repeat; }
 
 .wrap-feedSlider {
   background-color: rgba(34, 34, 34, 0.9);
