@@ -5,9 +5,11 @@ function pageInvoke() {
         // initialize carousel and marquee
         $(".owl-carousel").owlCarousel({
             items: 1,
-            smartSpeed: 900
+            smartSpeed: 900,
+            autoplay: true
             /*nav: true*/
         });
+        
         $('.marquee-slide').marquee({
             //speed in milliseconds of the marquee
             duration: 10000
