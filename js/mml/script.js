@@ -14,9 +14,7 @@ function pageInvoke() {
         });
     });
 }
-
 $(document).ready(function () {
     // Call Template
     pageInvoke();
-
 });
